@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="creditials">Copyright Disclaimer \n Under Section107 of the Copyright Act of 1976. \n\n  This act,allowance is made for &quot;fair use&quot; purposes only. But if you try to misuse this app, no tention, cool go ahead because you cant. This application is built under useless nonsense Quarantine. \n\n  The creator of this app had gone from many failures while creating this app, so feel free to waste your time.</string>
+    <string name="created_by_ujjwal_shrivastava_n_n_ujjwalshrivastava00_gmail_com">Created by Ujjwal Shrivastava \n\n ujjwalshrivastava00@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

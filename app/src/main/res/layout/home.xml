@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121111"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="RESET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonStart"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <EditText
+        android:id="@+id/text_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Whats around you?"
+        android:inputType="textPersonName"
+        android:textColor="#F8F5F5"
+        android:textColorHint="#F8F5F5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonSubmit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/timer"
+        android:layout_width="135dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/doppio_one"
+        android:inputType="number"
+        android:text="20"
+        android:textColor="#F61515"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text_time"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_items"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="68dp"
+        android:text="Start"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonReset"
+        app:layout_constraintEnd_toStartOf="@+id/timer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="167dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="84dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="TIME LEFT:-"
+        android:textColor="#F8F4F4"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/timer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="363dp"
+        android:layout_height="303dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSubmit"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="@id/text_items"
+        app:layout_constraintTop_toBottomOf="@+id/text_items"
+        app:layout_constraintVertical_bias="0.528">
+
+        <TextView
+            android:id="@+id/items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/doppio_one"
+            android:textColor="#FFFBFB"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="293dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/doppio_one"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
